@@ -250,7 +250,7 @@ for (;;) {
 }
 ```
 
-- Micro-ROS 통신을 통해 SBC의 ROS 명령(/cmd_vel)을 실시간으로 MCU 제어 루프에 반영하여 명령 지연 최소화(평균 50ms 이하) 를 달성했다.
+- Micro-ROS 통신을 통해 SBC의 ROS 명령(/cmd_vel)을 실시간으로 MCU 제어 루프에 반영하여 구현하였다.
 - Mode FSM(State Machine) 구조로 각 주행 상태(STOP / STRAIGHT / TURN / ZERO_TURN)를 논리적으로 구분하여 명확하고 유지보수성 높은 제어가 가능하다.
 - Timeout & Hold 기능을 통해 일시적인 통신 끊김에도 안전하게 정지하거나 이전 상태를 유지할 수 있다.
 - SyncWrite 방식을 통해 4개 휠을 동시에 제어하여 모터 간 속도 불균형(phase mismatch)을 방지했다.
